@@ -1,0 +1,236 @@
+@import url(reset.css);
+.file(@w, @h, @b) {
+    width: @w;
+    height: @h;
+    background: @b;
+}
+.bc(){
+    background:#4194f0;
+}
+
+.cl(){
+    color:#aaaaaa;
+}
+//封装弹性盒
+.box(@vor:horizontal) {
+    display: -webkit-box; //父类的弹性盒布局
+    -webkit-box-orient:@vor; //设置子元素排列方式
+}
+html,body,.main{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    .box(vertical);
+    header{
+        .file(100%,0.78rem,#4194f0);
+        .box;
+        -webkit-box-align: center;
+        span{
+            img{
+                .file(0.4rem,auto,none);  
+                margin-top: 0.2rem;
+                margin-left: 0.2rem;
+            }
+        }//sapn
+        h2{
+            -webkit-box-flex: 1;
+            text-align: center;
+            font-size: 0.38rem;
+            color: #fff;
+        }
+        a{
+            font-size: 0.25rem;
+            color: #fff;
+        }
+    }//header
+    section{
+        -webkit-box-flex: 1;
+        background: #f3f4f8;
+        position: relative;
+        .box(vertical);
+        .title{
+            .file(auto,0.63rem,none);
+            margin-left: 0.25rem;
+            margin-right: 0.25rem;
+             margin-top: 0.2rem;
+          border-radius:0.12rem ;
+          background:#fff  url(../img/images/title_03.jpg) no-repeat 0.3rem center;
+          span{
+              margin-left: 1rem;
+              display: block;
+              font-size: 0.24rem;
+              color:#aaaaaa;
+              margin-top: 0.1rem;
+          }
+        }//title
+        .middle{
+            .file(100%,1.21rem,#fff);
+            margin-top: 0.12rem;
+            span{
+                display: block;
+               padding-left: 0.7rem;
+               padding-top: 0.1rem;
+                background: url(../img/images/tttt.png) no-repeat 0.2rem center;
+                margin-top: 0.1rem;
+                font-size: 0.25rem;
+                .cl;
+            }
+            h5{
+              margin-top: 0.1rem;  
+              margin-left: 0.6rem;
+              font-size: 0.3rem;
+              color: #4194f0;
+            }
+        }//middle
+        .ce{
+            .file(0.54rem,9.19rem,#fff);
+            position: absolute;
+            right:0;
+            top:0.95rem;
+            ul{
+                text-align: center;
+                padding-top: 1.58rem;
+                li{
+                  color: #007AFF;
+                }
+            }
+        }//ce
+        h4{
+            font-size: 0.35rem;
+            margin-left: 0.4rem;
+        }
+        .cen{
+               h2{
+                    .file(0.82rem,auto,#4194f0);
+                    display: block;  
+                    font-size: 0.5rem;
+                    text-align: center;
+                    color: #fff;
+                    position: absolute;
+                    left:50%;
+                    margin-left: -0.4rem;
+                    top:4.5rem;
+                    border-radius: 0.1rem;
+                  } 
+           .file(100%,4.3rem,#fff);
+            &.one{
+                  color: #000;
+                  .file(100%,3rem,#fff);
+                  .tiao{
+                      margin-top: 0.25rem;
+                     border-bottom: 1px solid #e6e9eb;
+                  } 
+               }
+           .tiao{
+               .file(auto,0.72rem,none);
+               display: block;
+               font-size: 0.32rem;
+              padding-left: 0.2rem;
+               border-bottom: 1px solid #e6e9eb;
+               margin-top: 0.35rem;
+              
+           }
+        }//cen
+        //////支付页面
+       .z_title{
+    .file(100%,1.02rem,#fff);
+    .box;
+    border-bottom: 1px solid #ccc;
+    .dd{
+        -webkit-box-flex: 1;
+        display: block;
+        font-size: 0.33rem;
+        margin-left: 0.35rem;
+        margin-top: 0.25rem;
+        background: url(../img/images/z_title.png) no-repeat left top;
+        background-size:0.42rem ;
+        padding-left: 0.6rem;
+    }
+    .qi{
+        margin-top: 0.2rem; 
+        font-size: 0.4rem;
+        color: #007AFF;
+        margin-right: 0.3rem;
+    }
+}//z_title
+.z_xu{
+    .file(100%,0.73rem,none);
+    border-bottom: 1px solid #ccc;
+    .ze{
+        font-size: 0.26rem;
+        margin-left: 0.3rem;
+        margin-top: 0.2rem;
+        display: block;
+    }
+}//xu
+.z_stion{
+   .file(100%,2.73rem,#fff);
+    .one{
+        .box;
+        padding-left: 0.29rem;
+        padding-top: 0.25rem;
+        box-sizing: border-box;//边框盒子 解决多出盒子问题
+      .file(100%,0.92rem,none);
+      border-bottom: 1px solid #ccc;
+      input[type='radio']{
+          display: none;
+          //不占位隐藏  隐藏checkbox
+          &+label{
+          width: 0.38rem;
+          height: 0.38rem;
+          background: url(../img/images/checked-mark.png) no-repeat bottom;
+          background-size: 0.38rem auto;
+          display: block; 
+          }  
+          &:checked+label{
+            background-position:0 0; 
+         }//选中时替换
+      }//input
+      
+//   
+      .qiao{
+//        width: 1.22rem;
+            display: block;
+          -webkit-box-flex: 1;
+           margin-left:0.3rem;
+           padding-left: 0.5rem;
+          background: url(../img/images/images/qian_03.png) no-repeat left 0.1rem;
+          background-size: 0.32rem;
+          font-size: 0.29rem;
+        
+      }//qiao
+      .qiao.w{
+          background: url(../img/images/weixin.png) no-repeat left 0.1rem;
+          background-size:0.38rem ;
+      }
+      .qiao.z{
+         background: url(../img/images/zhifu.png) no-repeat left 0.1rem; 
+          background-size:0.38rem ;
+      }
+      .yu{
+         margin-right: 0.3rem;
+         font-size: 0.28rem;
+         color: #ff0050;
+      }
+        
+    }//one
+}//z_stion 
+    .di{
+        margin-top: 4.48rem; 
+       .en{
+           .file(5.6rem,auto,#4194f0);
+           outline: none;
+           border: none;
+           font-size: 0.5rem;
+            display: block;
+            margin-left: 0.3rem;
+            margin-bottom:0.3rem ;
+            border-radius:0.2rem ;
+            color: #fff;
+       }
+      }//di
+    }//section
+}//main
+
+

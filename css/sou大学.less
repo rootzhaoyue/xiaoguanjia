@@ -1,0 +1,95 @@
+@import url(m_style.css);
+.file(@w, @h, @b) {
+    width: @w;
+    height: @h;
+    background: @b;
+}
+//封装弹性盒
+.box(@vor:horizontal) {
+    display: -webkit-box; //父类的弹性盒布局
+    -webkit-box-orient:@vor; //设置子元素排列方式
+}
+html,body,.main{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    .box(vertical);
+    header{
+       .file(100%,0.78rem,#4194f0);
+        .box;
+        -webkit-box-align: center;
+        span{
+            img{
+                .file(0.4rem,auto,none);  
+                margin-top: 0.2rem;
+                margin-left: 0.2rem;
+            }
+        }//sapn
+        h2{
+            -webkit-box-flex: 1;
+            text-align: center;
+            font-size: 0.38rem;
+            color: #fff;
+        } 
+        a{
+            font-size: 0.3rem;
+          color: #fff;
+        }
+    }
+    section{
+          -webkit-box-flex:1;
+          background: #fff;
+        .he{
+            .box;
+            .file(100%,1.2rem,#f3f3f5);
+         .title{
+            .file(4rem,0.63rem,none);
+            margin-bottom: 0.4rem;
+            margin-left: 0.2rem;
+            margin-right: 0.5rem;
+             margin-top: 0.2rem;
+          border-radius:0.12rem ;
+          box-sizing: border-box;
+          background:#fff  url(../img/images/title_03.jpg) no-repeat 0.3rem center;
+          span{
+              margin-left: 1rem;
+              display: block;
+              font-size: 0.24rem;
+              color:#aaaaaa;
+              margin-top: 0.1rem;
+          }//span
+        }//title
+        .xiao{
+            .file(0.81rem,0.63rem,#eaeaea);
+            text-align: center;
+            font-size: 0.3rem;
+           padding-top: 0.1rem;
+           margin-top: 0.15rem;
+            box-sizing: border-box;
+            border: 1px solid #dbdbdd;
+           }
+        }//he
+        ////搜索无结果页面
+        .conter{
+            .box(vertical);
+//           
+            .file(100%,2.23rem,none);
+            margin-top: 2.3rem;
+            .datu{
+                display: block;
+                text-align: center;
+                img{
+                    .file(1.39rem,auto,none);
+                }
+            }//datu_span
+            .sorry{
+               .file(4.16rem,0.91rem,none);
+                padding-left: 1.6rem;
+                line-height: 0.9rem;
+                font-size: 0.36rem;
+                color: #cccccc;
+            }//sorry_p
+        }//conter
+     }//section
+}

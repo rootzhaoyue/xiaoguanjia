@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		
+		<meta  http-equiv="X-UA-Compatible"  content="IE=edge,chrome=1">
+        <meta  name="viewport"  content="width=device-width, initial-scale=1.0">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/sou大学.css"/>
+		  <script type="text/javascript">
+    	(function (doc, win) {
+	var docEl = doc.documentElement,
+		resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+		recalc = function () {
+
+			var clientWidth = docEl.clientWidth;
+			if (!clientWidth) return;
+			if (clientWidth >= 750) {
+				docEl.style.fontSize = '100px';
+			} else {
+				docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+			}
+		};
+
+	if (!doc.addEventListener) return;
+	win.addEventListener(resizeEvt, recalc, false);
+
+	doc.addEventListener('DOMContentLoaded', recalc, false);
+	/*DOMContentLoaded�ĵ�������ɲ���ͼƬ��Դ onload��ͼƬ��Դ*/
+})(document, window);
+    </script>
+	</head>
+	<body>
+		<div class="main">
+			<header>
+				<span><img src="img/images/header_03.jpg"/></span>
+				<h2>搜索学校</h2>
+				<a href=" 申请管家.html">+</a>
+			</header>
+			<section>
+				<div class="he">
+				     <div class="title">
+					<span>搜索学校</span>
+				   </div>
+				   <div class="xiao">
+				   	<a href="#">搜索</a>
+				   </div>
+				</div>
+				<!--he-->
+				<div class="conter">
+					<span class="datu"><img src="../day4/img/images/1.3.2conter_03.png"/></span>
+					<p class="sorry">抱歉！未找到所在学校</p>
+				</div>
+				<!--conter-->
+				<!--title-->
+			</section>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,277 @@
+@import url(m_style.css);
+.file(@w, @h, @b) {
+    width: @w;
+    height: @h;
+    background: @b;
+}
+//封装弹性盒
+.box(@vor:horizontal) {
+    display: -webkit-box; //父类的弹性盒布局
+    -webkit-box-orient:@vor; //设置子元素排列方式
+}
+html,body,.main{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    .box(vertical);
+    header{
+      .file(100%,0.86rem,#4194f0);
+       .box;
+        -webkit-box-align: center;
+        span{
+            img{
+                .file(0.4rem,auto,none);  
+                margin-top: 0.2rem;
+                margin-left: 0.2rem;
+            }
+        }//sapn
+        h2{
+            -webkit-box-flex: 1;
+            text-align: center;
+            font-size: 0.38rem;
+            color: #fff;
+            margin-right: 1.25rem;
+        }  
+    }//header
+    section{
+       -webkit-box-flex: 1; 
+       background: #f2f5f7;
+       .title{
+           .box(vertical);
+           margin-top: 0.36rem;
+           border-top:1px solid #ccc ;
+           .file(100%,1.36rem,#fff);
+           .top{
+               font-size: 0.27rem;
+               display: block;
+               margin-left: 0.18rem;
+               margin-top: 0.15rem;
+           }
+            .dizhi{
+                   font-size: 0.24rem;
+                   margin-top: 0.1rem;
+                     display: block;
+                     padding-left: 0.52rem;
+                    background: url(../img/images/sumit_order/lan.png) no-repeat 0.22rem center;
+                    background-size:0.25rem ;
+                    img{
+                        margin-left: 0.5rem;
+                        .file(0.19rem,auto,none);
+                        
+                    }
+               }
+               .hao{
+                   margin-left: 0.5rem;
+               }
+               .b{
+                   img{
+                       .file(100%,0.05rem,none);
+                   }
+                  }       
+               }//title
+               .one{
+                   .box;
+                   .file(100%,0.8rem,#fff);
+                   margin-top: 0.2rem;
+                   border-bottom: 1px solid #D2D2D2;
+                   border-top: 1px solid #ccc;
+                   .bei{
+                       display: block;
+                       -webkit-box-flex:1;
+                      font-size: 0.24rem;
+                      margin-left: 0.2rem;
+                      margin-top: 0.25rem;
+//                   
+                   }//bei
+                   .su{
+                       margin-right: 0.2rem;
+                       color: #666666; 
+                       margin-top: 0.17rem;
+                       display: block;
+                       font-size: 0.23rem;
+                         img{
+                        margin-left: 0.1rem;
+                         margin-top: 0.15rem;
+                          padding-bottom: 0.1rem;
+                        .file(0.19rem,auto,none);
+                        }
+                   }//宿舍那个字
+                   
+               }//one
+               .two{
+                   .box;
+                   .file(100%,0.83rem,#fff);
+                     margin-top: 0.22rem;
+//                  border-bottom: 1px solid #D2D2D2;
+                   .hang{
+                       display: block;
+                       margin-top: 0.25rem;
+                       padding-left: 0.5rem;
+                       font-size: 0.27rem;
+                       margin-bottom: 0.21rem;
+                       background: url(../img/images/sumit_order/shulan.png) no-repeat 0.25rem center;
+                       background-size: 0.13rem auto;
+                   }
+               }//two
+               .ction{
+                   .box;
+                   .file(100%,1.16rem,#fff);
+                   border-top:1px solid #ccc ;
+                   .left{
+                       .file(0.92rem,auto,none);
+                       margin-right: 0.18rem;
+                       margin-left: 0.2rem;
+                       img{
+                           .file(0.92rem,auto,none);
+                           padding-top: 0.13rem;
+                       }
+                   }//left
+                   .middle{
+                       .file(2.78rem,1.16rem,none);
+                       margin-right: 0.34rem;
+                       .zii{
+                           display: block;
+                           padding-top: 0.13rem;
+                           font-size: 0.2rem;
+                       }
+                   }
+                   .right{
+                       .file(1.84rem,1.16rem,none);
+                       .box;
+                       .yi{
+                           margin-right: 0.2rem;
+                           display: block;
+                           margin-top: 0.3rem;
+                           color: #999999;
+                       }
+                       .er{
+                           display: block;
+                          margin-right: 0.2rem;
+                          margin-top: 0.3rem; 
+                          text-decoration:line-through;
+                          color: #c8c8c8;
+                       }
+                       .san{
+                           display: block;
+                           margin-top: 0.3rem;
+                           font-size: 0.23rem;
+                       }
+                   }
+               }//ction
+               .tail{
+                   .box;
+                   .file(100%,0.79rem,#fff);
+                    border-top:1px solid #ccc ;
+                    .xx{
+                        margin-left: 0.2rem;
+                        display: block;
+                        margin-top: 0.22rem;
+                        font-size: 0.24rem;
+                    }//xx
+                    .zz{
+                        margin-left: 0.28rem;
+                        display: block;
+                        margin-top: 0.22rem;
+                         font-size: 0.24rem;
+                         -webkit-box-flex: 1;
+                    }//zz
+                    .hh{
+                         display: block;
+                        margin-top: 0.20rem;
+                         font-size: 0.26rem;
+                         margin-right: 0.2rem;
+                         .ww{
+                             color: #ff5a64;
+                         }
+                    }
+               }
+               
+               
+      }//section
+    footer{
+        .box;
+        .file(100%,0.86rem,none);
+        position: absolute;
+        left:0;
+        bottom: 0;
+        .dai{
+            display: block;
+            box-sizing: border-box;
+            .file(4.1rem,0.86rem,#454647);
+            font-size: 0.27rem;
+            padding-top: 0.25rem;
+            padding-left: 0.35rem;
+            color: #fff;
+        }//dai
+        .cheng{
+            box-sizing: border-box;
+            display: block;
+            .file(2.30rem,0.86rem,#ff8c50);
+            text-align: center;
+            padding-top: 0.28rem;
+            font-size: 0.32rem;
+            color: #fff;
+        }
+    }
+}
+.zhezhao{
+    .file(100%,100%,rgba(0,0,0, 0.6rem));
+    position: absolute;
+    left:0;
+    top:0;
+    .baidi{
+        .file(5.02rem,2.95rem,#fff);
+        box-sizing: border-box;
+        margin-left: 0.55rem;
+          margin-top: 50%;
+          .song{
+              font-size: 0.28rem;
+              display: block;
+              padding-top: 0.6rem;
+              margin-left: 0.4rem;
+               .lan{
+              font-size: 0.28rem;
+              color: #007AFF;
+             }
+          }//song
+          .oo{
+              margin-left: 0.4rem;
+              display: block;
+              margin-top: 0.2rem;
+              font-size: 0.22rem;
+              color: #666666;
+              margin-bottom: 0.35rem;
+          }//oo
+          .xia{
+              .box;
+//            -webkit-box-align: center;
+              .file(4.44rem,0.9rem,none);
+               margin-left: 0.4rem;
+               box-sizing: border-box;
+               .qu{
+                   box-sizing: border-box;
+                   display: inline-block;
+                  .file(2.11rem,0.78rem,none);
+                  margin-top: 0.1rem;
+                  border: 1px solid #007AFF;
+                  font-size: 0.27rem;
+                  color: #007AFF;
+                  text-align: center;
+                  padding-top: 0.19rem;
+               }//qu
+               .que{
+                   display: block;
+                   .file(2.11rem,0.78rem,#007AFF);
+                    margin-top: 0.1rem;
+                    margin-left: 0.15rem;
+                     font-size: 0.27rem;
+                     color: #ffF;
+                     text-align: center;
+                     padding-top: 0.19rem;
+                      box-sizing: border-box;
+               }
+          }
+         
+    }//baidi
+}

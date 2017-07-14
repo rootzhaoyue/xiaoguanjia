@@ -1,0 +1,103 @@
+@import url(m_style.css);
+html,
+body,
+.main {
+  width: 100%;
+  height: 100%;
+}
+.main {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.main header {
+  width: 100%;
+  height: 0.78rem;
+  background: #4194f0;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+}
+.main header span img {
+  width: 0.4rem;
+  height: auto;
+  background: none;
+  margin-top: 0.2rem;
+  margin-left: 0.2rem;
+}
+.main header h2 {
+  -webkit-box-flex: 1;
+  text-align: center;
+  font-size: 0.38rem;
+  color: #fff;
+}
+.main header a {
+  font-size: 0.3rem;
+  color: #fff;
+}
+.main section {
+  -webkit-box-flex: 1;
+  background: #fff;
+}
+.main section .he {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 1.2rem;
+  background: #f3f3f5;
+}
+.main section .he .title {
+  width: 4rem;
+  height: 0.63rem;
+  background: none;
+  margin-bottom: 0.4rem;
+  margin-left: 0.2rem;
+  margin-right: 0.5rem;
+  margin-top: 0.2rem;
+  border-radius: 0.12rem ;
+  box-sizing: border-box;
+  background: #ffffff url(../img/images/title_03.jpg) no-repeat 0.3rem center;
+}
+.main section .he .title span {
+  margin-left: 1rem;
+  display: block;
+  font-size: 0.24rem;
+  color: #aaaaaa;
+  margin-top: 0.1rem;
+}
+.main section .he .xiao {
+  width: 0.81rem;
+  height: 0.63rem;
+  background: #eaeaea;
+  text-align: center;
+  font-size: 0.3rem;
+  padding-top: 0.1rem;
+  margin-top: 0.15rem;
+  box-sizing: border-box;
+  border: 1px solid #dbdbdd;
+}
+.main section .conter {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  width: 100%;
+  height: 2.23rem;
+  background: none;
+  margin-top: 2.3rem;
+}
+.main section .conter .datu {
+  display: block;
+  text-align: center;
+}
+.main section .conter .datu img {
+  width: 1.39rem;
+  height: auto;
+  background: none;
+}
+.main section .conter .sorry {
+  width: 4.16rem;
+  height: 0.91rem;
+  background: none;
+  padding-left: 1.6rem;
+  line-height: 0.9rem;
+  font-size: 0.36rem;
+  color: #cccccc;
+}

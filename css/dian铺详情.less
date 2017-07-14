@@ -1,0 +1,415 @@
+@import url(m_style.css);
+.file(@w, @h, @b) {
+    width: @w;
+    height: @h;
+    background: @b;
+}
+//封装弹性盒
+@bgcoloer:#4194f0;
+.box(@vor:horizontal) {
+    display: -webkit-box; //父类的弹性盒布局
+    -webkit-box-orient:@vor; //设置子元素排列方式
+}
+html,body,.main{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    .box(vertical);
+    .tou{
+        .box;
+        .file(100%,0.57rem,#4194f0);
+        .jian{
+            margin-left: 0.29rem;
+            margin-top: 0.1rem;
+            display: block;
+            img{
+                 .file(0.4rem,auto,none);
+            }
+           
+        }//jian 箭头
+        .wenzi{
+            display: block;
+            -webkit-box-flex: 1;
+            margin-left: 0.34rem;
+            font-size: 0.29rem;
+            margin-top: 0.1rem;
+            color: #fff;
+            
+        }// wenzi头 字
+        .jia{
+            font-size: 0.25rem;
+            color: #fff;
+        }
+        
+    }//header top
+    
+    .conter{
+        -webkit-box-flex: 1;
+        position: relative;
+        .box(vertical);
+        .one{
+            .box;
+            .file(100%,1.28rem,@bgcoloer);
+            .left{
+                position: relative;
+                -webkit-box-flex: 1;
+                margin-left: 0.29rem;
+                .file(3.76rem,1.1rem,none);
+                background:url(../img/images/shop/morenhead_t.png)no-repeat left center;
+                background-size:1.08rem;
+                margin-top: 0.1rem;
+                .one_1{
+                    margin-left: 1.25rem;
+                    img{
+                        .file(0.61rem,auto,none);
+                    }
+                }//one_1 粉星星
+                .one_2{
+                    margin-left: 0.12rem;
+                    img{
+                       .file(0.64rem,auto,none); 
+                    }
+                }//夜电猫
+                 .one_3{
+                    margin-left: 0.12rem;
+                    img{
+                       .file(0.64rem,auto,none); 
+                    }
+                }//黄金档
+                .pais{
+                    margin-left: 1.25rem;
+                    margin-top: 0.18rem;
+                    font-size: 0.25rem;
+                    color: #fff;
+                    a{
+                        margin-left: 0.1rem;
+                        margin-right: 0.1rem;
+                    }
+                }// pais跑送商品
+            }//left
+            .xing{
+                font-size: 0.3rem;
+                margin-right: 0.21rem;
+            }//右边星星
+            
+            .day{
+                img{
+                   .file(1.08rem,auto,none);
+                }
+                position: absolute;
+                left:0.29rem;
+                top:0.1rem;
+            }//day 打烊遮罩
+        }//one
+        .nav_two{
+            .file(100%,0.67rem,none);
+            box-sizing: border-box;
+            .box;
+            .nav_ul{
+                display: inline-block;
+                .file(100%,0.68rem,none);
+                .box;
+                .nav_li{
+                    box-sizing: border-box;
+                    display: block;
+                    .file(2.16rem,0.66rem,none);
+                    font-size: 0.27rem;
+                  padding-top: 0.15rem;
+                    text-align: center;
+                    color: #000; 
+                }
+            }
+        }//nav_two
+        
+        .big_box{
+            .file(100%,8.85rem,none);
+             box-sizing:border-box;
+               overflow: auto;
+            .box;
+            .left{
+            .file(1.3rem,8.25rem,#f5f5f5);
+             border-right: 1px solid #BDBDBE;
+            .left_nr{
+                border-bottom: 1px solid #EAEAEA;
+                padding: 0.46rem 0.17rem;
+                font-size: 0.24rem;
+            }//li
+            .active{
+                background: #fff;
+            }
+            
+          }//left  
+          .right{
+              .file(auto,8.21rem,none);
+              -webkit-box-flex: 1;
+              .r_one{
+                  border-bottom: 1px solid #e1e3e6;
+                  .file(4.85rem,1.78rem,none);
+                  margin-left: 0.16rem;
+                  position: relative;
+                  .yuan{
+                      position: absolute;
+                      right:0.2rem;
+                      top:0.75rem;
+                      img{
+                          .file(0.44rem,auto,none);
+                      }
+                  }//圆圈
+                   .r_dd{
+                  .file(4.72rem,1.26rem,none);
+                  position: relative;
+                  .box;
+                    .r_tu{
+                  .file(1.1rem,1.05rem,none);
+                  margin-left: 0.2rem;
+                  margin-top: 0.19rem;
+                  img{
+                      .file(1.07rem,auto,none);
+                  }
+              }//r_tu
+              .shouwan{
+                  position: absolute;
+                  right:3.50rem;
+                  top:0.3rem;
+                  img{
+                      .file(0.89rem,auto,none);
+                        border-radius:50% ;
+                  }
+              }
+              .r_wenz{
+                  .file(3.17rem,1.05rem,none);
+                   margin-top: 0.19rem;
+                   margin-left: 0.2rem;
+                   .xg{
+                      margin-bottom: 0.12rem;
+                   }//香菇
+                   .kc{
+                       color: #989898;
+                       margin-bottom: 0.1rem;
+                       .er{
+                           color: #989898;
+                       }
+                   }//ku
+                   .money{
+                       color: #ff5a64;
+                       font-size: 0.25rem;
+                       .san{
+                         color: #cccccc;  
+                         text-decoration: line-through;
+                         font-size: 0.2rem;
+                       }//money
+                   }
+                 }//r_wenz
+                 .youh{
+                     position: absolute;
+                     left:0;
+                     right:0;
+                    img{
+                         .file(0.64rem,auto,none);
+                    }
+                 }
+                  
+              }//r_dd 套图和字的
+                
+                 .time{
+                     .file(2.67rem,auto,none);
+                     display: block;
+                     border: 1px solid #ff8c33;
+                     margin-top: 0.13rem;
+                     .t_z{
+                         font-size: 0.18rem;
+                         color: #ff8c33;
+                     }
+                     .t_x{
+                        .file(1.1rem,auto,#ff8c33);
+//                       margin-left: 0.65rem;
+                         font-size: 0.22rem;
+                         color: #fff;
+                     }
+                 }
+              }//r_one
+             
+          }
+           
+        }//big_box
+    }//section conter
+    .wei{
+        .box;
+       .file(100%,0.88rem,rgba(0,0,0, 0.6rem));
+       position: absolute;
+       left:0;
+       bottom:0;
+       .che{
+           .file(0.88rem,0.86rem,none);
+           position: absolute;
+           left:0;
+           top:-0.35rem;
+            z-index: 90;
+           border-radius:50% ;
+           border: 10px solid #484747;
+           margin-left: 0.16rem;
+           background:#393939 url(../img/images/on_shopping_car/zhe_che.png)no-repeat center center;
+           background-size:0.86rem auto ;
+            h2{
+           position: absolute;
+           left:0.5rem;
+           top:-0.25rem;
+          
+           img{
+               .file(0.64rem,auto,none);
+           }
+       }
+       }//che
+       .ling{
+           margin-left: 1.44rem;
+           -webkit-box-flex: 1;
+           color: #fff;
+           font-size: 0.32rem;
+           margin-top: 0.2rem;
+       }//line
+       .yang{
+           .file(2.28rem,0.86rem,#ff8c50);
+           font-size: 0.35rem;
+           padding-top: 0.15rem;
+           text-align: center;
+           color: #fff;
+       }
+       
+    }//wei
+  
+}//main
+///遮罩层
+ .zhezhao{
+        .file(100%,100%,rgba(0,0,0, 0.5rem));
+        position: absolute;
+        left:0;
+        top:0;
+        z-index: 100;
+//        .box;
+//         -webkit-box-align: center;
+//         -webkit-box-pack: center;
+           //元素居中
+        .bai{
+            .file(4.72rem,6.1rem,#fff);
+            border-radius:0.1rem;
+            position: relative;
+            margin-left: 0.92rem;
+            margin-top: 1.45rem;
+            .guan{
+                .file(0.57rem,auto,none);
+                position: absolute;
+                right:0.35rem;
+                top:0.15rem;
+            }//guan
+            .fd{
+                margin-left: 0.4rem;
+                margin-top: 0.24rem;
+                display: block;
+                img{
+                    .file(4.19rem,auto,none);
+                }
+            }//fd
+            .fd_z{
+                .file(4.74rem,0.84rem,none);
+                border-top:1px solid #ccc ;
+                padding-left: 0.18rem;
+                box-sizing: border-box;
+               font-size: 0.25rem;
+               padding-right: 0.29rem;
+               padding-top: 0.1rem;
+              
+            }
+        }
+    }//遮罩层
+    /////zhaezhao
+    .zhezhao_2{
+        .file(100%,50%,rgba(0,0,0, 0.6rem));
+        position: absolute;
+        left:0;
+        top:0;
+       
+    }//zhaezhao
+    .zhe_tail{
+        .file(100%,4.79rem,#fff);
+         position: absolute;
+        left:0;
+        top:50%;
+         .z_top{
+            .file(100%,0.7rem,#eeeeee);
+            .box;
+            .zuo{
+                display: block;
+                font-size: 0.27rem;
+               -webkit-box-flex: 1; 
+               margin-left: 0.19rem;
+               margin-top: 0.2rem;
+            }
+            .you{
+                 display: block;
+                font-size: 0.27rem; 
+                margin-right: 0.19rem;
+                margin-top: 0.2rem;
+            }
+              
+        }//z_top
+        .z_conter{
+            .box;
+            .file(100%,1.35rem,none);
+            -webkit-box-align: center;
+            border-bottom: 1px solid #ededed;
+            .dui{
+            margin-left: 0.21rem;
+            .file(0.4rem,0.4rem,none);
+           input[type='checkbox']{
+          display: none;
+          //不占位隐藏  隐藏checkbox
+          &+label{
+          width: 0.38rem;
+          height: 0.38rem;
+          background: url(../img/images/checked-mark.png) no-repeat bottom;
+          background-size: 0.38rem auto;
+          display: block; 
+          }  
+          &:checked+label{
+            background-position:0 0; 
+         }//选中时替换
+      }//input
+                
+            }//dui
+            .mian{
+                margin-left: 0.22rem;
+                img{
+                    .file(0.91rem,auto,none);
+                }
+            }//mian
+            .pin{
+                font-size: 0.25rem;
+                margin-left: 0.18rem;
+            }//padding
+            .jiage{
+                font-size: 0.22rem;
+                color: #ff5a64;
+                margin-left: 0.28rem;
+            }//jiage
+            .jian{
+                margin-left: 0.2rem;
+                img{
+                    .file(0.4rem,auto,none);
+                }
+            }//jian
+            .jiaa{
+                img{
+                    .file(0.4rem,auto,none);
+                } 
+            }//jiaa
+            .dd{
+                font-size: 0.22rem;
+                margin-left: 0.1rem;
+                margin-right: 0.1rem;
+            }
+           
+        }
+    }
+    
+ 

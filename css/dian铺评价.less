@@ -1,0 +1,244 @@
+@import url(m_style.css);
+.file(@w, @h, @b) {
+    width: @w;
+    height: @h;
+    background: @b;
+}
+//封装弹性盒
+.box(@vor:horizontal) {
+    display: -webkit-box; //父类的弹性盒布局
+    -webkit-box-orient:@vor; //设置子元素排列方式
+}
+html,body,.main{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    .box(vertical);
+    .tou{
+        .box;
+        .file(100%,0.57rem,#4194f0);
+        .jian{
+            margin-left: 0.29rem;
+            margin-top: 0.1rem;
+            display: block;
+            img{
+                 .file(0.4rem,auto,none);
+            }
+           
+        }//jian 箭头
+        .wenzi{
+            display: block;
+            -webkit-box-flex: 1;
+            margin-left: 0.34rem;
+            font-size: 0.29rem;
+            margin-top: 0.1rem;
+            color: #fff;
+            
+        }// wenzi头 字
+        .jia{
+            font-size: 0.25rem;
+            color: #fff;
+        }
+        
+    }//header top
+    
+   .conter{
+       -webkit-box-flex: 1;
+       background: #f2f5f7;
+        .one{
+            .box;
+            .file(100%,1.28rem,#4194f0);
+            .left{
+                position: relative;
+                -webkit-box-flex: 1;
+                margin-left: 0.29rem;
+                .file(3.76rem,1.1rem,none);
+                background:url(../img/images/shop/morenhead_t.png)no-repeat left center;
+                background-size:1.08rem;
+                margin-top: 0.1rem;
+                .one_1{
+                    margin-left: 1.25rem;
+                    img{
+                        .file(0.61rem,auto,none);
+                    }
+                }//one_1 粉星星
+                .one_2{
+                    margin-left: 0.12rem;
+                    img{
+                       .file(0.64rem,auto,none); 
+                    }
+                }//夜电猫
+                 .one_3{
+                    margin-left: 0.12rem;
+                    img{
+                       .file(0.64rem,auto,none); 
+                    }
+                }//黄金档
+                .pais{
+                    margin-left: 1.25rem;
+                    margin-top: 0.18rem;
+                    font-size: 0.25rem;
+                    color: #fff;
+                    a{
+                        margin-left: 0.1rem;
+                        margin-right: 0.1rem;
+                    }
+                }// pais跑送商品
+            }//left
+            .xing{
+                font-size: 0.3rem;
+                margin-right: 0.21rem;
+            }//右边星星
+            
+            .day{
+                img{
+                   .file(1.08rem,auto,none);
+                }
+                position: absolute;
+                left:0.29rem;
+                top:0.67rem;
+            }//day 打烊遮罩
+        }//one
+        .nav_two{
+            .file(100%,0.67rem,none);
+            box-sizing: border-box;
+            border-bottom: 1px solid #ccc;
+            .box;
+            .nav_ul{
+                display: inline-block;
+                .file(100%,0.68rem,none);
+                .box;
+                .nav_li{
+                    box-sizing: border-box;
+                    display: block;
+                    .file(2.16rem,0.66rem,none);
+                    font-size: 0.27rem;
+                  padding-top: 0.15rem;
+                    text-align: center;
+                    color: #000; 
+                }
+            }
+        }//nav_two
+        
+        .san_1{
+            .box;
+            .file(100%,1.33rem,#fff);
+            margin-bottom: 0.2rem;
+            .left{
+                .file(2.4rem,auto,none);
+                .box(vertical);
+//             padding: 0.15rem 0.5rem;
+               padding-left: 0.57rem;
+               padding-right: 0.1rem;
+               padding-top: 0.15rem;
+               padding-bottom: 0.2rem;
+                .si{
+                    font-size: 0.33rem;
+                    color: #ffb82e;
+                }
+                .ping{
+                    color: #666666;
+                    margin-bottom: 0.05rem;
+                    display: block;
+                }
+                .gong{
+                    color: #d6d6d6;
+                }
+            }//left
+            .right{
+                .box(vertical);
+                .file(3.25rem,1.19rem,none);
+                .top{
+                    .box;
+                  .song{
+                    font-size: 0.3rem;
+                    display: block;
+                    margin-left: 0.1rem;
+                    margin-top: 0.24rem;
+                }//
+                .y_xing{
+                    .file(1.12rem,0.23rem,none);
+                    display: block;
+                    z-index: 90;
+                    margin-left: 0.2rem;
+                    margin-top: 0.32rem;
+                   background: url(../img/images/on_shopping_car/wu_xing.png) repeat-x;
+                   background-size:0.23rem ;
+                   .w_xing{
+                       .file(80%,0.23rem,none);
+                       display: block;
+                       background: url(../img/images/on_shopping_car/yan_xing.png) repeat-x;
+                       background-size:0.23rem ;
+                   }///  
+                }
+                h5{
+                    font-size: 0.25rem;
+                    margin-left: 0.15rem;
+                    margin-top: 0.24rem;
+                    color: #ffb82e;
+                }
+                
+                }
+            }
+        }//san_1
+        .center{
+            .file(100%,1.31rem,#fff);
+            padding-top: 0.25rem;
+            .m_a{
+                .box;
+                .file(6.2rem,1.33rem,#fff);
+                margin-left: 0.15rem;
+                border-bottom: 1px solid #eeeeee;
+                .one{
+                    box-sizing: border-box;
+                    .file(0.79rem,1.33rem,#fff);
+                    padding-top: 0.16rem;
+                    img{
+                        .file(0.68rem,auto,#fff);
+                    }
+                }//one
+                .two{
+                    .file(1.17rem,1.33rem,none);
+                    .box(vertical);
+                    -webkit-box-flex: 1;
+                    h4{
+                        font-size: 0.25rem;
+                        display: block;
+                        margin-top: 0.12rem;
+                    }
+                     .y_xing{
+                    .file(1.12rem,0.23rem,none);
+                    display: block;
+                    z-index: 90;
+//                  margin-left: 0.2rem;
+                    margin-top: 0.1rem;
+                   background: url(../img/images/on_shopping_car/wu_xing.png) repeat-x;
+                   background-size:0.23rem ;
+                   .w_xing{
+                       .file(80%,0.23rem,none);
+                       display: block;
+                       background: url(../img/images/on_shopping_car/yan_xing.png) repeat-x;
+                       background-size:0.23rem ;
+                   }///  
+                }
+                  .hao{
+                      font-size: 0.24rem;
+                      display: block;
+                      margin-top: 0.1rem;
+                  }
+                
+                }//two
+                .sui{
+                      .time{
+                      color: #989898;
+                      margin-right: 0.15rem;
+                  }  
+                }
+            }
+        }
+       
+   }//conter//section
+   
+   
+}//main

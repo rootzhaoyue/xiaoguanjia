@@ -1,0 +1,85 @@
+@import url(m_style.css);
+html,
+body,
+.main {
+  width: 100%;
+  height: 100%;
+}
+.main {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.main header {
+  width: 100%;
+  height: 0.78rem;
+  background: #4194f0;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+}
+.main header span img {
+  width: 0.4rem;
+  height: auto;
+  background: none;
+  margin-top: 0.2rem;
+  margin-left: 0.2rem;
+}
+.main header h2 {
+  -webkit-box-flex: 1;
+  text-align: center;
+  font-size: 0.38rem;
+  color: #fff;
+}
+.main header a {
+  font-size: 0.25rem;
+  color: #fff;
+}
+.main section {
+  -webkit-box-flex: 1;
+  background: #f3f4f8;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.main section .title {
+  width: auto;
+  height: 0.63rem;
+  background: none;
+  margin-bottom: 0.4rem;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  margin-top: 0.2rem;
+  border-radius: 0.12rem ;
+  background: #ffffff url(../img/images/title_03.jpg) no-repeat 0.3rem center;
+}
+.main section .title span {
+  margin-left: 1rem;
+  display: block;
+  font-size: 0.24rem;
+  color: #aaaaaa;
+  margin-top: 0.1rem;
+}
+.main section .one {
+  width: 100%;
+  height: 1.5rem;
+  background: #ffffff;
+}
+.main section .one.two .wen_2 {
+  font-size: 0.3rem;
+  margin-left: 0.29rem;
+  display: block;
+  width: 5.84rem;
+  border-bottom: 1px solid #e7e8ea;
+  height: 1rem;
+}
+.main section .one .wen {
+  font-size: 0.3rem;
+  margin-left: 0.29rem;
+  display: block;
+  width: 5.84rem;
+  border-bottom: 1px solid #e7e8ea;
+  margin-top: 0.2rem;
+  height: 0.63rem;
+  background: url(../../day4/img/images/wen_b_03.png) no-repeat right center;
+  background-size: 0.38rem;
+  color: #007AFF;
+}

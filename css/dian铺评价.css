@@ -1,0 +1,278 @@
+@import url(m_style.css);
+html,
+body,
+.main {
+  width: 100%;
+  height: 100%;
+}
+.main {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.main .tou {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 0.57rem;
+  background: #4194f0;
+}
+.main .tou .jian {
+  margin-left: 0.29rem;
+  margin-top: 0.1rem;
+  display: block;
+}
+.main .tou .jian img {
+  width: 0.4rem;
+  height: auto;
+  background: none;
+}
+.main .tou .wenzi {
+  display: block;
+  -webkit-box-flex: 1;
+  margin-left: 0.34rem;
+  font-size: 0.29rem;
+  margin-top: 0.1rem;
+  color: #fff;
+}
+.main .tou .jia {
+  font-size: 0.25rem;
+  color: #fff;
+}
+.main .conter {
+  -webkit-box-flex: 1;
+  background: #f2f5f7;
+}
+.main .conter .one {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 1.28rem;
+  background: #4194f0;
+}
+.main .conter .one .left {
+  position: relative;
+  -webkit-box-flex: 1;
+  margin-left: 0.29rem;
+  width: 3.76rem;
+  height: 1.1rem;
+  background: none;
+  background: url(../img/images/shop/morenhead_t.png) no-repeat left center;
+  background-size: 1.08rem;
+  margin-top: 0.1rem;
+}
+.main .conter .one .left .one_1 {
+  margin-left: 1.25rem;
+}
+.main .conter .one .left .one_1 img {
+  width: 0.61rem;
+  height: auto;
+  background: none;
+}
+.main .conter .one .left .one_2 {
+  margin-left: 0.12rem;
+}
+.main .conter .one .left .one_2 img {
+  width: 0.64rem;
+  height: auto;
+  background: none;
+}
+.main .conter .one .left .one_3 {
+  margin-left: 0.12rem;
+}
+.main .conter .one .left .one_3 img {
+  width: 0.64rem;
+  height: auto;
+  background: none;
+}
+.main .conter .one .left .pais {
+  margin-left: 1.25rem;
+  margin-top: 0.18rem;
+  font-size: 0.25rem;
+  color: #fff;
+}
+.main .conter .one .left .pais a {
+  margin-left: 0.1rem;
+  margin-right: 0.1rem;
+}
+.main .conter .one .xing {
+  font-size: 0.3rem;
+  margin-right: 0.21rem;
+}
+.main .conter .one .day {
+  position: absolute;
+  left: 0.29rem;
+  top: 0.67rem;
+}
+.main .conter .one .day img {
+  width: 1.08rem;
+  height: auto;
+  background: none;
+}
+.main .conter .nav_two {
+  width: 100%;
+  height: 0.67rem;
+  background: none;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ccc;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.main .conter .nav_two .nav_ul {
+  display: inline-block;
+  width: 100%;
+  height: 0.68rem;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.main .conter .nav_two .nav_ul .nav_li {
+  box-sizing: border-box;
+  display: block;
+  width: 2.16rem;
+  height: 0.66rem;
+  background: none;
+  font-size: 0.27rem;
+  padding-top: 0.15rem;
+  text-align: center;
+  color: #000;
+}
+.main .conter .san_1 {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 1.33rem;
+  background: #ffffff;
+  margin-bottom: 0.2rem;
+}
+.main .conter .san_1 .left {
+  width: 2.4rem;
+  height: auto;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  padding-left: 0.57rem;
+  padding-right: 0.1rem;
+  padding-top: 0.15rem;
+  padding-bottom: 0.2rem;
+}
+.main .conter .san_1 .left .si {
+  font-size: 0.33rem;
+  color: #ffb82e;
+}
+.main .conter .san_1 .left .ping {
+  color: #666666;
+  margin-bottom: 0.05rem;
+  display: block;
+}
+.main .conter .san_1 .left .gong {
+  color: #d6d6d6;
+}
+.main .conter .san_1 .right {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  width: 3.25rem;
+  height: 1.19rem;
+  background: none;
+}
+.main .conter .san_1 .right .top {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.main .conter .san_1 .right .top .song {
+  font-size: 0.3rem;
+  display: block;
+  margin-left: 0.1rem;
+  margin-top: 0.24rem;
+}
+.main .conter .san_1 .right .top .y_xing {
+  width: 1.12rem;
+  height: 0.23rem;
+  background: none;
+  display: block;
+  z-index: 90;
+  margin-left: 0.2rem;
+  margin-top: 0.32rem;
+  background: url(../img/images/on_shopping_car/wu_xing.png) repeat-x;
+  background-size: 0.23rem ;
+}
+.main .conter .san_1 .right .top .y_xing .w_xing {
+  width: 80%;
+  height: 0.23rem;
+  background: none;
+  display: block;
+  background: url(../img/images/on_shopping_car/yan_xing.png) repeat-x;
+  background-size: 0.23rem ;
+}
+.main .conter .san_1 .right .top h5 {
+  font-size: 0.25rem;
+  margin-left: 0.15rem;
+  margin-top: 0.24rem;
+  color: #ffb82e;
+}
+.main .conter .center {
+  width: 100%;
+  height: 1.31rem;
+  background: #ffffff;
+  padding-top: 0.25rem;
+}
+.main .conter .center .m_a {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 6.2rem;
+  height: 1.33rem;
+  background: #ffffff;
+  margin-left: 0.15rem;
+  border-bottom: 1px solid #eeeeee;
+}
+.main .conter .center .m_a .one {
+  box-sizing: border-box;
+  width: 0.79rem;
+  height: 1.33rem;
+  background: #ffffff;
+  padding-top: 0.16rem;
+}
+.main .conter .center .m_a .one img {
+  width: 0.68rem;
+  height: auto;
+  background: #ffffff;
+}
+.main .conter .center .m_a .two {
+  width: 1.17rem;
+  height: 1.33rem;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-flex: 1;
+}
+.main .conter .center .m_a .two h4 {
+  font-size: 0.25rem;
+  display: block;
+  margin-top: 0.12rem;
+}
+.main .conter .center .m_a .two .y_xing {
+  width: 1.12rem;
+  height: 0.23rem;
+  background: none;
+  display: block;
+  z-index: 90;
+  margin-top: 0.1rem;
+  background: url(../img/images/on_shopping_car/wu_xing.png) repeat-x;
+  background-size: 0.23rem ;
+}
+.main .conter .center .m_a .two .y_xing .w_xing {
+  width: 80%;
+  height: 0.23rem;
+  background: none;
+  display: block;
+  background: url(../img/images/on_shopping_car/yan_xing.png) repeat-x;
+  background-size: 0.23rem ;
+}
+.main .conter .center .m_a .two .hao {
+  font-size: 0.24rem;
+  display: block;
+  margin-top: 0.1rem;
+}
+.main .conter .center .m_a .sui .time {
+  color: #989898;
+  margin-right: 0.15rem;
+}

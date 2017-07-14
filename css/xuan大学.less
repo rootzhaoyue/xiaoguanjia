@@ -1,0 +1,89 @@
+@import url(m_style.css);
+.file(@w, @h, @b) {
+    width: @w;
+    height: @h;
+    background: @b;
+}
+//封装弹性盒
+.box(@vor:horizontal) {
+    display: -webkit-box; //父类的弹性盒布局
+    -webkit-box-orient:@vor; //设置子元素排列方式
+}
+html,body,.main{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    .box(vertical);
+    header{
+         .file(100%,0.78rem,#4194f0);
+        .box;
+        -webkit-box-align: center;
+        span{
+            img{
+                .file(0.4rem,auto,none);  
+                margin-top: 0.2rem;
+                margin-left: 0.2rem;
+            }
+        }//sapn
+        h2{
+            -webkit-box-flex: 1;
+            text-align: center;
+            font-size: 0.38rem;
+            color: #fff;
+        }
+        a{
+            font-size: 0.25rem;
+            color: #fff;
+        }
+       }
+       section{
+         -webkit-box-flex: 1;
+        background: #f3f4f8;
+        .box(vertical);
+        .title{
+            .file(auto,0.63rem,none);
+            margin-bottom: 0.4rem;
+            margin-left: 0.25rem;
+            margin-right: 0.25rem;
+             margin-top: 0.2rem;
+          border-radius:0.12rem ;
+          background:#fff  url(../img/images/title_03.jpg) no-repeat 0.3rem center;
+          span{
+              margin-left: 1rem;
+              display: block;
+              font-size: 0.24rem;
+              color:#aaaaaa;
+              margin-top: 0.1rem;
+          }//span
+        }//title
+        
+        .one{
+            .file(100%,1.5rem,#fff);
+            &.two{
+               .wen_2{
+                font-size: 0.3rem;
+                margin-left: 0.29rem;
+                display: block;
+                width: 5.84rem;
+                border-bottom:1px solid #e7e8ea;
+                height: 1rem;
+              } 
+            }
+            .wen{
+                font-size: 0.3rem;
+                margin-left: 0.29rem;
+                display: block;
+                width: 5.84rem;
+                border-bottom:1px solid #e7e8ea;
+                margin-top: 0.2rem;
+                height: 0.63rem;
+                background: url(../../day4/img/images/wen_b_03.png)no-repeat right center;
+                background-size: 0.38rem;
+                color: #007AFF;
+            }
+         } //one
+         ///////搜索大学
+        
+       }//section
+}//main

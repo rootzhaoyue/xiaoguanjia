@@ -1,0 +1,242 @@
+@import url(reset.css);
+html,
+body,
+.main {
+  width: 100%;
+  height: 100%;
+}
+.main {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.main header {
+  width: 100%;
+  height: 0.78rem;
+  background: #4194f0;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+}
+.main header span img {
+  width: 0.4rem;
+  height: auto;
+  background: none;
+  margin-top: 0.2rem;
+  margin-left: 0.2rem;
+}
+.main header h2 {
+  -webkit-box-flex: 1;
+  text-align: center;
+  font-size: 0.38rem;
+  color: #fff;
+}
+.main header a {
+  font-size: 0.25rem;
+  color: #fff;
+}
+.main section {
+  -webkit-box-flex: 1;
+  background: #f3f4f8;
+  position: relative;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.main section .title {
+  width: auto;
+  height: 0.63rem;
+  background: none;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  margin-top: 0.2rem;
+  border-radius: 0.12rem ;
+  background: #ffffff url(../img/images/title_03.jpg) no-repeat 0.3rem center;
+}
+.main section .title span {
+  margin-left: 1rem;
+  display: block;
+  font-size: 0.24rem;
+  color: #aaaaaa;
+  margin-top: 0.1rem;
+}
+.main section .middle {
+  width: 100%;
+  height: 1.21rem;
+  background: #ffffff;
+  margin-top: 0.12rem;
+}
+.main section .middle span {
+  display: block;
+  padding-left: 0.7rem;
+  padding-top: 0.1rem;
+  background: url(../img/images/tttt.png) no-repeat 0.2rem center;
+  margin-top: 0.1rem;
+  font-size: 0.25rem;
+  color: #aaaaaa;
+}
+.main section .middle h5 {
+  margin-top: 0.1rem;
+  margin-left: 0.6rem;
+  font-size: 0.3rem;
+  color: #4194f0;
+}
+.main section .ce {
+  width: 0.54rem;
+  height: 9.19rem;
+  background: #ffffff;
+  position: absolute;
+  right: 0;
+  top: 0.95rem;
+}
+.main section .ce ul {
+  text-align: center;
+  padding-top: 1.58rem;
+}
+.main section .ce ul li {
+  color: #007AFF;
+}
+.main section h4 {
+  font-size: 0.35rem;
+  margin-left: 0.4rem;
+}
+.main section .cen {
+  width: 100%;
+  height: 4.3rem;
+  background: #ffffff;
+}
+.main section .cen h2 {
+  width: 0.82rem;
+  height: auto;
+  background: #4194f0;
+  display: block;
+  font-size: 0.5rem;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  margin-left: -0.4rem;
+  top: 4.5rem;
+  border-radius: 0.1rem;
+}
+.main section .cen.one {
+  color: #000;
+  width: 100%;
+  height: 3rem;
+  background: #ffffff;
+}
+.main section .cen.one .tiao {
+  margin-top: 0.25rem;
+  border-bottom: 1px solid #e6e9eb;
+}
+.main section .cen .tiao {
+  width: auto;
+  height: 0.72rem;
+  background: none;
+  display: block;
+  font-size: 0.32rem;
+  padding-left: 0.2rem;
+  border-bottom: 1px solid #e6e9eb;
+  margin-top: 0.35rem;
+}
+.main section .z_title {
+  width: 100%;
+  height: 1.02rem;
+  background: #ffffff;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  border-bottom: 1px solid #ccc;
+}
+.main section .z_title .dd {
+  -webkit-box-flex: 1;
+  display: block;
+  font-size: 0.33rem;
+  margin-left: 0.35rem;
+  margin-top: 0.25rem;
+  background: url(../img/images/z_title.png) no-repeat left top;
+  background-size: 0.42rem ;
+  padding-left: 0.6rem;
+}
+.main section .z_title .qi {
+  margin-top: 0.2rem;
+  font-size: 0.4rem;
+  color: #007AFF;
+  margin-right: 0.3rem;
+}
+.main section .z_xu {
+  width: 100%;
+  height: 0.73rem;
+  background: none;
+  border-bottom: 1px solid #ccc;
+}
+.main section .z_xu .ze {
+  font-size: 0.26rem;
+  margin-left: 0.3rem;
+  margin-top: 0.2rem;
+  display: block;
+}
+.main section .z_stion {
+  width: 100%;
+  height: 2.73rem;
+  background: #ffffff;
+}
+.main section .z_stion .one {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  padding-left: 0.29rem;
+  padding-top: 0.25rem;
+  box-sizing: border-box;
+  width: 100%;
+  height: 0.92rem;
+  background: none;
+  border-bottom: 1px solid #ccc;
+}
+.main section .z_stion .one input[type='radio'] {
+  display: none;
+}
+.main section .z_stion .one input[type='radio'] + label {
+  width: 0.38rem;
+  height: 0.38rem;
+  background: url(../img/images/checked-mark.png) no-repeat bottom;
+  background-size: 0.38rem auto;
+  display: block;
+}
+.main section .z_stion .one input[type='radio']:checked + label {
+  background-position: 0 0;
+}
+.main section .z_stion .one .qiao {
+  display: block;
+  -webkit-box-flex: 1;
+  margin-left: 0.3rem;
+  padding-left: 0.5rem;
+  background: url(../img/images/images/qian_03.png) no-repeat left 0.1rem;
+  background-size: 0.32rem;
+  font-size: 0.29rem;
+}
+.main section .z_stion .one .qiao.w {
+  background: url(../img/images/weixin.png) no-repeat left 0.1rem;
+  background-size: 0.38rem ;
+}
+.main section .z_stion .one .qiao.z {
+  background: url(../img/images/zhifu.png) no-repeat left 0.1rem;
+  background-size: 0.38rem ;
+}
+.main section .z_stion .one .yu {
+  margin-right: 0.3rem;
+  font-size: 0.28rem;
+  color: #ff0050;
+}
+.main section .di {
+  margin-top: 4.48rem;
+}
+.main section .di .en {
+  width: 5.6rem;
+  height: auto;
+  background: #4194f0;
+  outline: none;
+  border: none;
+  font-size: 0.5rem;
+  display: block;
+  margin-left: 0.3rem;
+  margin-bottom: 0.3rem ;
+  border-radius: 0.2rem ;
+  color: #fff;
+}

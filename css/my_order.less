@@ -1,0 +1,162 @@
+@import url(m_style.css);
+.file(@w, @h, @b) {
+    width: @w;
+    height: @h;
+    background: @b;
+}
+//封装弹性盒
+.box(@vor:horizontal) {
+    display: -webkit-box; //父类的弹性盒布局
+    -webkit-box-orient:@vor; //设置子元素排列方式
+}
+html,body,.main{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    .box(vertical);
+    header{
+         .file(100%,0.86rem,#4194f0);
+       .box;
+        -webkit-box-align: center;
+        span{
+            img{
+                .file(0.4rem,auto,none);  
+                margin-top: 0.2rem;
+                margin-left: 0.2rem;
+            }
+        }//sapn
+        h2{
+            -webkit-box-flex: 1;
+            text-align: center;
+            font-size: 0.38rem;
+            color: #fff;
+            margin-right: 1.25rem;
+        }  
+    }
+    section{
+        -webkit-box-flex: 1;
+        background: #f9f9f9;
+        overflow: auto;
+         .nav_two{
+            .file(100%,0.67rem,none);
+            box-sizing: border-box;
+            border-bottom: 1px solid #ccc;
+            .box;
+            .nav_ul{
+                display: inline-block;
+                .file(100%,0.68rem,none);
+                .box;
+                .nav_li{
+                    box-sizing: border-box;
+                    display: block;
+                    .file(2.16rem,0.66rem,none);
+                    font-size: 0.27rem;
+                  padding-top: 0.15rem;
+                    text-align: center;
+                    color: #000; 
+                }
+            }
+        }//nav_two
+        .conter{
+            .box(vertical);
+            .file(6.05rem,2.94rem,none);
+            margin-top: 0.19rem;
+            margin-left: 0.19rem;
+            position: relative;
+            .ju{
+                position: absolute;
+                top: 0;
+                left:0;
+                img{
+                    .file(0.08rem,2.94rem,none);
+                }
+            }//矩形侧栏
+            .top{
+                .box;
+                .file(5.90rem,0.71rem,#fff);
+                .dan{
+                   font-size: 0.25rem; 
+                   display: block;
+                   -webkit-box-flex: 1;
+                   margin-left: 0.25rem;
+                   margin-top: 0.23rem;
+                }//dan
+                .qu{
+                    font-size: 0.25rem;
+                    color: #666666;
+                     display: block;
+                     margin-right: 0.2rem;
+                   margin-top: 0.23rem;
+                     
+                }
+            }//top
+            .middle{
+                .file(5.9rem,1.45rem,#f9f9f9);
+                .dian{
+                    display: block;
+                   padding-left: 0.62rem;
+                   margin-top: 0.2rem;
+                    font-size: 0.3rem;
+                    background: url(../img/images/my_order/dian.png) no-repeat 0.21rem center;
+                    background-size:0.32rem ;
+                }//dian
+                .jine{
+                    font-size: 0.24rem;
+                    display:block ;
+                   padding-left: 0.7rem;
+                   margin-top: 0.05rem;
+                   background: url(../img/images/my_order/jine.png) no-repeat 0.3rem center;
+                    background-size:0.32rem ;
+                    a{
+                        color: #007AFF;
+                    }
+                    .jian{
+                        margin-left: 2.9rem;
+                        img{
+                            .file(0.19rem,auto,none);
+                        }
+                    }
+                }
+            }//middle
+            .tail{
+                .box;
+                .file(5.9rem,0.78rem,#fff);
+                b{
+                    display: block;
+                    -webkit-box-flex: 1;
+                }
+                .shan{
+                    display: block;
+                    box-sizing: border-box;
+                    .file(1.36rem,0.51rem,#fff);
+                    margin-right: 0.25rem;
+                    margin-top: 0.15rem;
+                    border: 1px solid #000;
+                    font-size: 0.22rem;
+                    text-align: center;
+                    padding-top: 0.1rem;
+                }
+            }
+        }//
+    }
+    footer{
+        .file(100%,0.97rem,none);
+        .box;
+        -webkit-box-align: center;
+        box-shadow: 2px 0 #ebeef0;
+        dl{
+            -webkit-box-flex: 1;
+            text-align: center;
+            dt{
+                
+              img{
+                  .file(0.43rem,auto,none);
+              }  
+            }
+            dd{
+               color: #d2d2d2; 
+            }
+        }
+    }
+}

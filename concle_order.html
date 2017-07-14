@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		
+		<meta  http-equiv="X-UA-Compatible"  content="IE=edge,chrome=1">
+        <meta  name="viewport"  content="width=device-width, initial-scale=1.0">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/concle_order.css"/>
+		  <script type="text/javascript">
+    	(function (doc, win) {
+	var docEl = doc.documentElement,
+		resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+		recalc = function () {
+
+			var clientWidth = docEl.clientWidth;
+			if (!clientWidth) return;
+			if (clientWidth >= 750) {
+				docEl.style.fontSize = '100px';
+			} else {
+				docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+			}
+		};
+
+	if (!doc.addEventListener) return;
+	win.addEventListener(resizeEvt, recalc, false);
+
+	doc.addEventListener('DOMContentLoaded', recalc, false);
+	/*DOMContentLoaded�ĵ�������ɲ���ͼƬ��Դ onload��ͼƬ��Դ*/
+})(document, window);
+    </script>
+	</head>
+	<body>
+		<div class="main">
+			<header>
+				 <a href="#" class="jian"><img src="img/images/header_03.jpg"/></a>
+			     <span class="wenzi">取消订单</span>
+			</header>
+			<section>
+				<div class="one">
+					<span class="what">为什么取消订单</span>
+				</div>
+				<div class="two">
+					<div class="quan">
+						<input type="checkbox" id="enne" name="s" /><label for="enne"></label>
+					</div>
+					<span class="wei">地址填写错误</span>
+				</div>
+				<div class="two">
+					<div class="quan">
+						<input type="checkbox" id="er"  name="s"/><label for="er"></label>
+					</div>
+					<span class="wei">感觉有点丑</span>
+				</div>
+				<div class="two">
+					<div class="quan">
+						<input type="checkbox" id="san"  name="s"/><label for="san"></label>
+					</div>
+					<span class="wei">不想买了</span>
+				</div>
+				
+			</section>
+			<footer>
+				<input type="text" class="sum" value="提&nbsp;&nbsp;交"/>
+			</footer>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,218 @@
+@import url(m_style.css);
+.file(@w, @h, @b) {
+    width: @w;
+    height: @h;
+    background: @b;
+}
+//封装弹性盒
+.box(@vor:horizontal) {
+    display: -webkit-box; //父类的弹性盒布局
+    -webkit-box-orient:@vor; //设置子元素排列方式
+}
+html,body,.main{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    .box(vertical);
+    header{
+       .file(100%,2.25rem,#4194f0);
+        .box(vertical);
+            .shang{
+                .box;
+                margin-top: 0.15rem;
+                  span{
+            display: block;
+//           float: left;
+            img{
+                .file(0.4rem,auto,none);  
+                margin-top: 0.2rem;
+                margin-left: 0.2rem;
+               } 
+            }//span
+             h2{
+            -webkit-box-flex: 1;
+           
+            text-align: center;
+            font-size: 0.38rem;
+            color: #fff;
+            margin-right: 1.25rem;
+                } //h2 
+      
+        }//shang
+      
+        .xia{
+            .box(vertical);
+            .file(6.03rem,1.28rem,none);
+            margin-left: 0.2rem;
+            margin-top: 0.15rem;
+          border-radius:0.25rem ;
+          background:#fff url(../img/images/daizhifu/yuanq1.png) no-repeat 0.2rem center;
+          background-size:0.77rem ;
+          b{
+           font-size: 0.3rem; 
+           padding-left: 1.08rem;
+           display: block;
+           margin-top: 0.25rem;
+           margin-bottom: 0.1rem;
+           color: #333333;  
+          }
+          span{
+              display: block;
+               padding-left: 1.08rem;
+               color: #666666; 
+          }
+        }//xia
+    }
+    section{
+      -webkit-box-flex: 1;  
+      background: #fff;
+      overflow: auto;
+      .k{
+          .file(100%,0.2rem,#f2f5f7);
+      }
+           .two{
+                   .box;
+                   .file(100%,0.83rem,#fff);
+                     margin-top: 0.22rem;
+//                  border-bottom: 1px solid #D2D2D2;
+                   .hang{
+                       display: block;
+                       margin-top: 0.15rem;
+                       padding-left: 0.5rem;
+                       font-size: 0.27rem;
+                       margin-bottom: 0.21rem;
+                       background: url(../img/images/sumit_order/shulan.png) no-repeat 0.25rem center;
+                       background-size: 0.13rem auto;
+                   }
+               }//two
+                 .ction{
+                   .box;
+                   .file(100%,1.16rem,#fff);
+                   border-top:1px solid #ccc ;
+                   .left{
+                       .file(0.92rem,auto,none);
+                       margin-right: 0.18rem;
+                       margin-left: 0.2rem;
+                       img{
+                           .file(0.92rem,auto,none);
+                           padding-top: 0.13rem;
+                       }
+                   }//left
+                   .middle{
+                       .file(2.78rem,1.16rem,none);
+                       margin-right: 0.34rem;
+                       .zii{
+                           display: block;
+                           padding-top: 0.13rem;
+                           font-size: 0.2rem;
+                       }
+                   }
+                   .right{
+                       .file(1.84rem,1.16rem,none);
+                       .box;
+                       .yi{
+                           margin-right: 0.2rem;
+                           display: block;
+                           margin-top: 0.3rem;
+                           color: #999999;
+                       }
+                       .er{
+                           display: block;
+                          margin-right: 0.2rem;
+                          margin-top: 0.3rem; 
+                          text-decoration:line-through;
+                          color: #c8c8c8;
+                       }
+                       .san{
+                           display: block;
+                           margin-top: 0.3rem;
+                           font-size: 0.23rem;
+                       }
+                   }
+               }//ction
+                .tail{
+                   .box;
+                   .file(100%,0.79rem,#fff);
+                    border-top:1px solid #ccc ;
+                    .xx{
+                        margin-left: 0.2rem;
+                        display: block;
+                        margin-top: 0.22rem;
+                        font-size: 0.24rem;
+                    }//xx
+                    .zz{
+                        margin-left: 0.28rem;
+                        display: block;
+                        margin-top: 0.22rem;
+                         font-size: 0.24rem;
+                         -webkit-box-flex: 1;
+                    }//zz
+                    .hh{
+                         display: block;
+                        margin-top: 0.20rem;
+                         font-size: 0.26rem;
+                         margin-right: 0.2rem;
+                         .ww{
+                             color: #ff5a64;
+                         }
+                    }
+               }//tail
+               .sui{
+                   .box;
+                   .file(100%,0.8rem,none);
+                   margin-top: 0.2rem;
+                   border-top:1px solid #CCCCCC ;
+                   border-bottom:1px solid #CCCCCC ;
+                   background:#fff url(../img/images/daizhifu/images/lanlan_03.png) no-repeat 0.2rem center;
+                   background-size:0.3rem ;
+                   .shou{
+                       display: block;
+                       font-size: 0.26rem;
+                       margin-left: 0.61rem;
+                       margin-top: 0.21rem;
+                   }
+               }//sui
+               .for{
+                   .file(100%,0.70rem,#fff);
+                   margin-left: 0.2rem;
+                   font-size: 0.27rem;
+                  padding-top: 0.15rem;
+                   border-bottom:1px solid #CCCCCC ;
+                  
+               }//footer
+               .wu{
+                   .file(100%,0.97rem,#fff);
+                   font-size: 0.26rem;
+                   margin-left: 0.2rem;
+                   margin-top: 0.2rem;
+                   .dd{
+                       color: #A4A4A4;
+                       margin-left: 0.1rem;
+                   }
+               }
+                 
+    }//section
+    footer{
+        .file(100%,0.89rem,#000);
+         .tail_2{
+                .box;
+                .file(100%,0.89rem,#fff);
+                b{
+                    display: block;
+                    -webkit-box-flex: 1;
+                }
+                .shan{
+                    display: block;
+                    box-sizing: border-box;
+                    .file(1.36rem,0.51rem,#fff);
+                    margin-right: 0.25rem;
+                    margin-top: 0.15rem;
+                    border: 1px solid #000;
+                    font-size: 0.22rem;
+                    text-align: center;
+                    padding-top: 0.1rem;
+                }
+            }
+    }
+}

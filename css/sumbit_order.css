@@ -1,0 +1,311 @@
+@import url(m_style.css);
+html,
+body,
+.main {
+  width: 100%;
+  height: 100%;
+}
+.main {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.main header {
+  width: 100%;
+  height: 0.86rem;
+  background: #4194f0;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+}
+.main header span img {
+  width: 0.4rem;
+  height: auto;
+  background: none;
+  margin-top: 0.2rem;
+  margin-left: 0.2rem;
+}
+.main header h2 {
+  -webkit-box-flex: 1;
+  text-align: center;
+  font-size: 0.38rem;
+  color: #fff;
+  margin-right: 1.25rem;
+}
+.main section {
+  -webkit-box-flex: 1;
+  background: #f2f5f7;
+}
+.main section .title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  margin-top: 0.36rem;
+  border-top: 1px solid #ccc ;
+  width: 100%;
+  height: 1.36rem;
+  background: #ffffff;
+}
+.main section .title .top {
+  font-size: 0.27rem;
+  display: block;
+  margin-left: 0.18rem;
+  margin-top: 0.15rem;
+}
+.main section .title .dizhi {
+  font-size: 0.24rem;
+  margin-top: 0.1rem;
+  display: block;
+  padding-left: 0.52rem;
+  background: url(../img/images/sumit_order/lan.png) no-repeat 0.22rem center;
+  background-size: 0.25rem ;
+}
+.main section .title .dizhi img {
+  margin-left: 0.5rem;
+  width: 0.19rem;
+  height: auto;
+  background: none;
+}
+.main section .title .hao {
+  margin-left: 0.5rem;
+}
+.main section .title .b img {
+  width: 100%;
+  height: 0.05rem;
+  background: none;
+}
+.main section .one {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 0.8rem;
+  background: #ffffff;
+  margin-top: 0.2rem;
+  border-bottom: 1px solid #D2D2D2;
+  border-top: 1px solid #ccc;
+}
+.main section .one .bei {
+  display: block;
+  -webkit-box-flex: 1;
+  font-size: 0.24rem;
+  margin-left: 0.2rem;
+  margin-top: 0.25rem;
+}
+.main section .one .su {
+  margin-right: 0.2rem;
+  color: #666666;
+  margin-top: 0.17rem;
+  display: block;
+  font-size: 0.23rem;
+}
+.main section .one .su img {
+  margin-left: 0.1rem;
+  margin-top: 0.15rem;
+  padding-bottom: 0.1rem;
+  width: 0.19rem;
+  height: auto;
+  background: none;
+}
+.main section .two {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 0.83rem;
+  background: #ffffff;
+  margin-top: 0.22rem;
+}
+.main section .two .hang {
+  display: block;
+  margin-top: 0.25rem;
+  padding-left: 0.5rem;
+  font-size: 0.27rem;
+  margin-bottom: 0.21rem;
+  background: url(../img/images/sumit_order/shulan.png) no-repeat 0.25rem center;
+  background-size: 0.13rem auto;
+}
+.main section .ction {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 1.16rem;
+  background: #ffffff;
+  border-top: 1px solid #ccc ;
+}
+.main section .ction .left {
+  width: 0.92rem;
+  height: auto;
+  background: none;
+  margin-right: 0.18rem;
+  margin-left: 0.2rem;
+}
+.main section .ction .left img {
+  width: 0.92rem;
+  height: auto;
+  background: none;
+  padding-top: 0.13rem;
+}
+.main section .ction .middle {
+  width: 2.78rem;
+  height: 1.16rem;
+  background: none;
+  margin-right: 0.34rem;
+}
+.main section .ction .middle .zii {
+  display: block;
+  padding-top: 0.13rem;
+  font-size: 0.2rem;
+}
+.main section .ction .right {
+  width: 1.84rem;
+  height: 1.16rem;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.main section .ction .right .yi {
+  margin-right: 0.2rem;
+  display: block;
+  margin-top: 0.3rem;
+  color: #999999;
+}
+.main section .ction .right .er {
+  display: block;
+  margin-right: 0.2rem;
+  margin-top: 0.3rem;
+  text-decoration: line-through;
+  color: #c8c8c8;
+}
+.main section .ction .right .san {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.23rem;
+}
+.main section .tail {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 0.79rem;
+  background: #ffffff;
+  border-top: 1px solid #ccc ;
+}
+.main section .tail .xx {
+  margin-left: 0.2rem;
+  display: block;
+  margin-top: 0.22rem;
+  font-size: 0.24rem;
+}
+.main section .tail .zz {
+  margin-left: 0.28rem;
+  display: block;
+  margin-top: 0.22rem;
+  font-size: 0.24rem;
+  -webkit-box-flex: 1;
+}
+.main section .tail .hh {
+  display: block;
+  margin-top: 0.20rem;
+  font-size: 0.26rem;
+  margin-right: 0.2rem;
+}
+.main section .tail .hh .ww {
+  color: #ff5a64;
+}
+.main footer {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 0.86rem;
+  background: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.main footer .dai {
+  display: block;
+  box-sizing: border-box;
+  width: 4.1rem;
+  height: 0.86rem;
+  background: #454647;
+  font-size: 0.27rem;
+  padding-top: 0.25rem;
+  padding-left: 0.35rem;
+  color: #fff;
+}
+.main footer .cheng {
+  box-sizing: border-box;
+  display: block;
+  width: 2.3rem;
+  height: 0.86rem;
+  background: #ff8c50;
+  text-align: center;
+  padding-top: 0.28rem;
+  font-size: 0.32rem;
+  color: #fff;
+}
+.zhezhao {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.zhezhao .baidi {
+  width: 5.02rem;
+  height: 2.95rem;
+  background: #ffffff;
+  box-sizing: border-box;
+  margin-left: 0.55rem;
+  margin-top: 50%;
+}
+.zhezhao .baidi .song {
+  font-size: 0.28rem;
+  display: block;
+  padding-top: 0.6rem;
+  margin-left: 0.4rem;
+}
+.zhezhao .baidi .song .lan {
+  font-size: 0.28rem;
+  color: #007AFF;
+}
+.zhezhao .baidi .oo {
+  margin-left: 0.4rem;
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.22rem;
+  color: #666666;
+  margin-bottom: 0.35rem;
+}
+.zhezhao .baidi .xia {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 4.44rem;
+  height: 0.9rem;
+  background: none;
+  margin-left: 0.4rem;
+  box-sizing: border-box;
+}
+.zhezhao .baidi .xia .qu {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 2.11rem;
+  height: 0.78rem;
+  background: none;
+  margin-top: 0.1rem;
+  border: 1px solid #007AFF;
+  font-size: 0.27rem;
+  color: #007AFF;
+  text-align: center;
+  padding-top: 0.19rem;
+}
+.zhezhao .baidi .xia .que {
+  display: block;
+  width: 2.11rem;
+  height: 0.78rem;
+  background: #007aff;
+  margin-top: 0.1rem;
+  margin-left: 0.15rem;
+  font-size: 0.27rem;
+  color: #ffF;
+  text-align: center;
+  padding-top: 0.19rem;
+  box-sizing: border-box;
+}

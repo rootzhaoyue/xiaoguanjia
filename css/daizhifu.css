@@ -1,0 +1,247 @@
+@import url(m_style.css);
+html,
+body,
+.main {
+  width: 100%;
+  height: 100%;
+}
+.main {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.main header {
+  width: 100%;
+  height: 2.25rem;
+  background: #4194f0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.main header .shang {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  margin-top: 0.15rem;
+}
+.main header .shang span {
+  display: block;
+}
+.main header .shang span img {
+  width: 0.4rem;
+  height: auto;
+  background: none;
+  margin-top: 0.2rem;
+  margin-left: 0.2rem;
+}
+.main header .shang h2 {
+  -webkit-box-flex: 1;
+  text-align: center;
+  font-size: 0.38rem;
+  color: #fff;
+  margin-right: 1.25rem;
+}
+.main header .xia {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  width: 6.03rem;
+  height: 1.28rem;
+  background: none;
+  margin-left: 0.2rem;
+  margin-top: 0.15rem;
+  border-radius: 0.25rem ;
+  background: #ffffff url(../img/images/daizhifu/yuanq1.png) no-repeat 0.2rem center;
+  background-size: 0.77rem ;
+}
+.main header .xia b {
+  font-size: 0.3rem;
+  padding-left: 1.08rem;
+  display: block;
+  margin-top: 0.25rem;
+  margin-bottom: 0.1rem;
+  color: #333333;
+}
+.main header .xia span {
+  display: block;
+  padding-left: 1.08rem;
+  color: #666666;
+}
+.main section {
+  -webkit-box-flex: 1;
+  background: #fff;
+  overflow: auto;
+}
+.main section .k {
+  width: 100%;
+  height: 0.2rem;
+  background: #f2f5f7;
+}
+.main section .two {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 0.83rem;
+  background: #ffffff;
+  margin-top: 0.22rem;
+}
+.main section .two .hang {
+  display: block;
+  margin-top: 0.15rem;
+  padding-left: 0.5rem;
+  font-size: 0.27rem;
+  margin-bottom: 0.21rem;
+  background: url(../img/images/sumit_order/shulan.png) no-repeat 0.25rem center;
+  background-size: 0.13rem auto;
+}
+.main section .ction {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 1.16rem;
+  background: #ffffff;
+  border-top: 1px solid #ccc ;
+}
+.main section .ction .left {
+  width: 0.92rem;
+  height: auto;
+  background: none;
+  margin-right: 0.18rem;
+  margin-left: 0.2rem;
+}
+.main section .ction .left img {
+  width: 0.92rem;
+  height: auto;
+  background: none;
+  padding-top: 0.13rem;
+}
+.main section .ction .middle {
+  width: 2.78rem;
+  height: 1.16rem;
+  background: none;
+  margin-right: 0.34rem;
+}
+.main section .ction .middle .zii {
+  display: block;
+  padding-top: 0.13rem;
+  font-size: 0.2rem;
+}
+.main section .ction .right {
+  width: 1.84rem;
+  height: 1.16rem;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.main section .ction .right .yi {
+  margin-right: 0.2rem;
+  display: block;
+  margin-top: 0.3rem;
+  color: #999999;
+}
+.main section .ction .right .er {
+  display: block;
+  margin-right: 0.2rem;
+  margin-top: 0.3rem;
+  text-decoration: line-through;
+  color: #c8c8c8;
+}
+.main section .ction .right .san {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.23rem;
+}
+.main section .tail {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 0.79rem;
+  background: #ffffff;
+  border-top: 1px solid #ccc ;
+}
+.main section .tail .xx {
+  margin-left: 0.2rem;
+  display: block;
+  margin-top: 0.22rem;
+  font-size: 0.24rem;
+}
+.main section .tail .zz {
+  margin-left: 0.28rem;
+  display: block;
+  margin-top: 0.22rem;
+  font-size: 0.24rem;
+  -webkit-box-flex: 1;
+}
+.main section .tail .hh {
+  display: block;
+  margin-top: 0.20rem;
+  font-size: 0.26rem;
+  margin-right: 0.2rem;
+}
+.main section .tail .hh .ww {
+  color: #ff5a64;
+}
+.main section .sui {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 0.8rem;
+  background: none;
+  margin-top: 0.2rem;
+  border-top: 1px solid #CCCCCC ;
+  border-bottom: 1px solid #CCCCCC ;
+  background: #ffffff url(../img/images/daizhifu/images/lanlan_03.png) no-repeat 0.2rem center;
+  background-size: 0.3rem ;
+}
+.main section .sui .shou {
+  display: block;
+  font-size: 0.26rem;
+  margin-left: 0.61rem;
+  margin-top: 0.21rem;
+}
+.main section .for {
+  width: 100%;
+  height: 0.7rem;
+  background: #ffffff;
+  margin-left: 0.2rem;
+  font-size: 0.27rem;
+  padding-top: 0.15rem;
+  border-bottom: 1px solid #CCCCCC ;
+}
+.main section .wu {
+  width: 100%;
+  height: 0.97rem;
+  background: #ffffff;
+  font-size: 0.26rem;
+  margin-left: 0.2rem;
+  margin-top: 0.2rem;
+}
+.main section .wu .dd {
+  color: #A4A4A4;
+  margin-left: 0.1rem;
+}
+.main footer {
+  width: 100%;
+  height: 0.89rem;
+  background: #000000;
+}
+.main footer .tail_2 {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 0.89rem;
+  background: #ffffff;
+}
+.main footer .tail_2 b {
+  display: block;
+  -webkit-box-flex: 1;
+}
+.main footer .tail_2 .shan {
+  display: block;
+  box-sizing: border-box;
+  width: 1.36rem;
+  height: 0.51rem;
+  background: #ffffff;
+  margin-right: 0.25rem;
+  margin-top: 0.15rem;
+  border: 1px solid #000;
+  font-size: 0.22rem;
+  text-align: center;
+  padding-top: 0.1rem;
+}
